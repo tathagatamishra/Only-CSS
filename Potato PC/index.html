@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<title>POTATO PC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+
+	<link rel="StyleSheet" href="style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="screen">
+			<iframe src="black.html" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div id="pc_rim"></div>
+		<div id="back-lit"></div>
+
+		<div id="cam_holder"></div>
+		<div id="cam_cover"></div>
+		<div id="cam_lens"></div>
+
+		<div id="leg"></div>
+		<div id="feet"></div>
+		<div id="feet_cover"></div>
+
+		<div id="logo">LOL</div>
+		<marquee id="text1" width="60%" direction="left" height="100px">Generated Only Using Basic CSS & HTML  //  Only Buttons are interactive // No SVG/PNG/VECTOR Image Used</marquee>
+		<a id="github" href="https://github.com/tathagatamishra/ExtraMilestone/tree/PC">github</a>
+
+		<div id="box_top"></div>
+		<div id="box_front"></div>
+		<div id="box_back"></div>
+		<div id="Line_left"></div>
+		<div id="Line_right"></div>
+
+		<div id="but_base"></div>
+		<div id="light_1"></div>
+		<div id="light_cover"></div>
+		<div id="light_2"></div>
+		<div id="light_cover2"></div>
+
+		<div id="speak_r"></div>
+		<div id="speak_rx"></div>
+		<div id="speak_l"></div>
+		<div id="speak_lx"></div>
+
+		<ul class="TV__channels">
+			<li class="TV__channel"><a href="https://youtube.com/embed/aXOChLn5ZdQ" title="Channel 1"></a></li>
+			<li class="TV__channel"><a href="https://youtube.com/embed/JXrWPLNp9tw" title="Channel 2"></a></li>
+			<li class="TV__channel"><a href="https://youtube.com/embed/e9dZQelULDk" title="Channel 3"></a></li>
+			
+			<li class="TV__channel"><a class="power" href="noise.html" title="Channel x"></a></li>
+			
+			<li class="TV__channel"><a href="https://youtube.com/embed/dx76YPgZviE" title="Channel 4"></a></li>
+			<li class="TV__channel"><a href="https://youtube.com/embed/8X2kIfS6fb8" title="Channel 5"></a></li>
+			<li class="TV__channel"><a href="https://youtube.com/embed/OKZrjObjtgg" title="Channel 6"></a></li>
+			<li class="TV__channel"><a class="hidden" href="black.html" title="Channel x"></a></li>
+		</ul>
+
+	</div>
+</body>
+<script>
+	let buttons = document.querySelectorAll(".TV__channel a");
+
+	for (let i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function (e) {
+			document.querySelector(".screen iframe").src = this.href;
+			e.preventDefault();
+		});
+	}
+</script>
+
+</html>

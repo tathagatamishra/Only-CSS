@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+
+    <style>
+        html,
+        body {
+            /* background-color: #100919; */
+            margin: 0;
+        }
+
+        .holder {
+            /* border: 1px solid red; */
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #100919; */
+            background-image: linear-gradient(#100919, rgb(0, 0, 0), rgb(41, 9, 9));
+        }
+
+        h1 {
+            /* border: 2px solid red; */
+            color: rgb(162, 255, 0);
+            text-shadow: 0 0 20px rgba(0, 255, 106, 0.562);
+        }
+
+        .screen {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 65%;
+            height: 70px;
+            border: 3px solid rgb(0, 200, 250);
+            border-radius: 30px;
+            background-color: #fffadd;
+            box-shadow: 0 0 20px rgba(0, 89, 255, 0.57);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            color: #353535;
+        }
+
+        .keyboard {
+            /* border: 2px solid red; */
+            width: 85%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* justify-content: space-around; */
+        }
+
+        button {
+            width: 40px;
+            height: 25px;
+            border-color: #00eeff;
+            border-radius: 20px;
+            background-color: #5b5b5b;
+            color: rgb(170, 255, 0);
+        }
+
+        #sub {
+            width: 80px;
+            height: 25px;
+            border-color: #ff1e00;
+            border-radius: 5px;
+            background-color: #ff0800;
+            color: rgb(255, 255, 255);
+        }
+
+        #key1 {
+            /* border: 1px solid #ff0000; */
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #key2 {
+            /* border: 1px solid #ff0000; */
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #key3 {
+            /* border: 1px solid #ff0000; */
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #key4 {
+            /* border: 1px solid #ff0000; */
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #key5 {
+            /* border: 1px solid #ff0000; */
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #special {
+            width: 80px;
+            height: 25px;
+            border-color: #00eeff;
+            border-radius: 20px;
+            background-color: #5b5b5b;
+            color: rgb(170, 255, 0);
+        }
+
+        #lol {
+            color: #7c7c7c;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none
+        }
+    </style>
+
+
+    <script>
+
+        function input(output) {
+            document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + output.innerHTML
+        }
+        function space() {
+            document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + " "
+        }
+        function cls() {
+            document.getElementById("text").innerHTML = ""
+        }
+        function sub() {
+            document.getElementById("text").innerHTML = "Thank You"
+        }
+        function delay(URL) {
+            setTimeout(function () { window.location = URL }, 2000);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="holder">
+        <h1>Virtual Keyboard</h1>
+        <br>
+        <div class="screen">
+            <p id="text"></p>
+        </div>
+        <br>
+        <div class="keyboard">
+            <div id="key1">
+                <button onclick="input(this)">1</button>
+                <button onclick="input(this)">2</button>
+                <button onclick="input(this)">3</button>
+                <button onclick="input(this)">4</button>
+                <button onclick="input(this)">5</button>
+                <button onclick="input(this)">6</button>
+                <button onclick="input(this)">7</button>
+                <button onclick="input(this)">8</button>
+                <button onclick="input(this)">9</button>
+                <button onclick="input(this)">0</button>
+            </div>
+            <br>
+            <div id="key2">
+                <button onclick="input(this)">Q</button>
+                <button onclick="input(this)">W</button>
+                <button onclick="input(this)">E</button>
+                <button onclick="input(this)">R</button>
+                <button onclick="input(this)">T</button>
+                <button onclick="input(this)">Y</button>
+                <button onclick="input(this)">U</button>
+                <button onclick="input(this)">I</button>
+                <button onclick="input(this)">O</button>
+                <button onclick="input(this)">P</button>
+            </div>
+            <br>
+            <div id="key3">
+                <button onclick="input(this)">A</button>
+                <button onclick="input(this)">S</button>
+                <button onclick="input(this)">D</button>
+                <button onclick="input(this)">F</button>
+                <button onclick="input(this)">G</button>
+                <button onclick="input(this)">H</button>
+                <button onclick="input(this)">J</button>
+                <button onclick="input(this)">K</button>
+                <button onclick="input(this)">L</button>
+            </div>
+            <br>
+            <div id="key4">
+                <button onclick="input(this)">Z</button>
+                <button onclick="input(this)">X</button>
+                <button onclick="input(this)">C</button>
+                <button onclick="input(this)">V</button>
+                <button onclick="input(this)">B</button>
+                <button onclick="input(this)">N</button>
+                <button onclick="input(this)">M</button>
+            </div>
+            <br>
+            <div id="key5">
+                <button onclick="input(this)">.</button>
+                <button onclick="space()">__</button>
+                <button onclick="cls()">DEL</button>
+            </div>
+        </div>
+
+        <p id="lol"><i>
+            just a simple keyboard
+            <br>
+            better with smaller or portrait screen
+        </i></p>
+
+        <button id="sub" onclick="sub()">
+            <a href="javascript:delay('https://www.youtube.com/@vfxinvein')">
+                Subscribe
+            </a>
+        </button>
+    </div>
+</body>
+
+</html>
