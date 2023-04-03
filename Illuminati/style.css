@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  background-color: rgb(125, 125, 125);
+  position: relative;
+  height: 100vh;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 195px solid transparent;
+  border-right: 195px solid transparent;
+  border-bottom: 300px solid #353535;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.eye {
+  border-radius: 100%;
+  width: 200px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  transition: ease-in-out 500ms;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    black 50%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+.eye:hover {
+  height: 100px;
+}
+
+h1 {
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: #35353548;
+}
