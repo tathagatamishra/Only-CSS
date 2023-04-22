@@ -6,10 +6,14 @@ function App() {
   const [showSign, setShowSign] = useState(false);
 
   function showOnClick(show) {
+
+    
     if (show == 1) {
+      document.querySelector("title").innerHTML = "Log in"
       setShowSign(false);
       setShowLog(true);
     } else {
+      document.querySelector("title").innerHTML = "Sign up"
       setShowLog(false);
       setShowSign(true);
     }
