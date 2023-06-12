@@ -1,0 +1,66 @@
+.App {
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  background: rgb(53, 53, 53);
+  border: solid 30px rgb(91, 96, 99);
+}
+
+
+.snake {
+    width: 10px;
+    height: 10px;
+    background: turquoise;
+}
+
+.control {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 120px;
+    width: 120px;
+
+    border: solid gray;
+    border-radius: 50px;
+    background: silver;
+}
+
+.a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: 40px;
+    width: 40px;
+}
+.b {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+
+    height: 40px;
+    width: 40px;
+}
+.c {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: 40px;
+    width: 40px;
+}
+.d {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    height: 40px;
+    width: 40px;
+}
