@@ -1,5 +1,3 @@
-Certainly! Here's an example of a `README.md` file for the Snake Game:
-
 # Snake Game
 
 This is a simple Snake game implemented using React. The player controls a snake on a game board and can move it in four directions: up, right, down, and left. The game can be played using keyboard arrow keys or by clicking on the control buttons displayed on the screen.
@@ -16,13 +14,13 @@ This is a simple Snake game implemented using React. The player controls a snake
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/snake-game.git
+git clone https://github.com/tathagatamishra/snake-game.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd snake-game
+cd I-M-A-SNAKE
 ```
 
 3. Install the dependencies:
@@ -34,10 +32,8 @@ npm install
 4. Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
-
-5. Open your browser and visit `http://localhost:3000` to play the game.
 
 ## How to Play
 
@@ -64,10 +60,4 @@ const [snake, setSnake] = useState({
 
 This Snake game is a basic implementation and serves as a starting point for building more advanced features. Feel free to enhance and expand upon it to create your own unique Snake game!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
-
-Feel free to update and customize the `README.md` file to match your specific project structure and requirements. Include relevant sections such as gameplay instructions, customization options, acknowledgments, and license information. Additionally, you can add screenshots or GIFs to showcase the game in action.
